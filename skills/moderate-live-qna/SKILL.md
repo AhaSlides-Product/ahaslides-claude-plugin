@@ -8,8 +8,8 @@ description: Read and moderate audience questions in an AhaSlides Q&A during a l
 ## Read questions
 
 1. Find the presentation with `list_presentations` if the user did not give an id.
-2. `list_qna_questions` shows the questions as they arrive. Pass the last id you saw as `after_id` to read only new ones.
-3. `get_presentation_settings` shows whether moderation is on. `wait_for_qna_questions` waits for new questions to moderate and only works with moderation on.
+2. `list_qna_questions` shows the questions as they arrive. Pass the `next_after_id` it returned on the previous call as `after_id` to read only new ones; if `truncated` is true, call again with `next_after_id`.
+3. `get_presentation_settings` shows whether moderation is on. `wait_for_qna_questions` only works with moderation on: list once to catch up, then call it in a loop with the previous `next_after_id`, judge each batch, and send decisions to `moderate_qna_questions`.
 
 ## Moderate
 
