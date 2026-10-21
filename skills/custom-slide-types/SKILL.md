@@ -12,8 +12,9 @@ A custom slide type is a small web page with files, checks and a test presentati
 1. Check what exists: `slide_type_list` (the user's own types), and `list_slide_types` for the built-in catalogue, in case a built-in already fits.
 2. Create the type with `slide_type_create`, then work on its files with `slide_type_list_files`, `slide_type_read_file`, `slide_type_create_file`, `slide_type_edit_file`, `slide_type_move_file` and `slide_type_upload_file`. Change its details with `slide_type_update`.
 3. Run `slide_type_check` after changes and fix what it reports.
-4. Verify in a browser with the long-running jobs `slide_type_start_preview_build`, `slide_type_start_preview_test`, `slide_type_start_live_verify` and `slide_type_start_judge`, and poll each with `slide_type_job_status`. Do not start a job again while one is running.
-5. Try it with `slide_type_test_presentation`, share it with `slide_type_share_link`, and finish with `slide_type_handoff_report`.
+4. Verify in a browser with the long-running jobs `slide_type_start_preview_build`, `slide_type_start_preview_test` and `slide_type_start_live_verify`, and poll each with `slide_type_job_status`. Do not start a job again while one is running.
+5. Judge each surface yourself: `slide_type_judge_brief` returns its screenshots, criteria, the files to read with `slide_type_read_file` and a `judge_token`. Apply every criterion, then send your verdict, each failure and the token with `slide_type_record_judge`. When the brief answers `STALE_SCREENSHOTS`, run the job it names again; when `slide_type_record_judge` answers `STALE`, the page changed after the brief, so get a new one.
+6. Try it with `slide_type_test_presentation`, share it with `slide_type_share_link`, and finish with `slide_type_handoff_report`.
 
 ## Confirm first
 
