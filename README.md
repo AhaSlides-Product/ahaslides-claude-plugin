@@ -30,7 +30,7 @@ Edit:
 
 Manage and share:
 
-12. `organise-presentations`: finds, renames, duplicates, moves, deletes and recovers files and folders.
+12. `organise-presentations`: finds, renames, duplicates, moves, deletes and recovers presentations, and manages folders.
 13. `share-and-collaborate`: shares presentations, folders, surveys and courses.
 14. `personal-skills`: saves and manages your own reusable instructions, and browses the built-in recipes.
 

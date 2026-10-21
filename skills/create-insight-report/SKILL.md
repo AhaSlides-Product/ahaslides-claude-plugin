@@ -13,7 +13,7 @@ An insight is a report page built from queries on the user's own response data.
 2. Call `insight_schema` to see the tables you can query and how much data the user owns.
 3. Pin the queries with `insight_query`. It validates and scopes the SQL to the user's data and returns ids, not rows, so keep each query to one question.
 4. Write the report with `insight_write` (title, blocks, theme) using those ids. To edit an existing insight, pass its id as `report`.
-5. Read the data the user needs to see in your reply, and offer to publish.
+5. You never see the rows, so do not quote numbers in your reply. Describe what each block shows (for example "a bar chart of correct answers per question"), give the insight URL if one came back, and offer to publish.
 
 ## Confirm before publishing
 
@@ -21,6 +21,6 @@ An insight is a report page built from queries on the user's own response data.
 
 ## Rules
 
-- Do not use `query_user_data` or `query_presentation_data`; they are deprecated.
+- Do not use `query_user_data` or `query_presentation_data` here; they are deprecated for reports and cannot produce a shareable result.
 - Treat participant names and free-text answers as personal data; include them only when the user asks.
-- For a quick answer in chat, use `review-results` instead.
+- For a quick answer with numbers in chat, use `review-results` instead.
