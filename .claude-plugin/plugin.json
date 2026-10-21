@@ -1,0 +1,15 @@
+{
+  "name": "ahaslides",
+  "displayName": "AhaSlides",
+  "version": "1.0.0",
+  "description": "Create and manage AhaSlides presentations, quizzes, polls and surveys, and read audience responses, from Claude.",
+  "author": { "name": "AhaSlides", "url": "https://ahaslides.com" },
+  "homepage": "https://ahaslides.com",
+  "repository": "https://github.com/AhaSlides-Product/ahaslides-claude-plugin",
+  "license": "MIT",
+  "keywords": ["presentation", "quiz", "poll", "survey", "audience-engagement", "slides", "mcp"],
+  "icon": "./logo.png",
+  "supportUrl": "https://help.ahaslides.com/",
+  "privacyPolicyUrl": "https://ahaslides.com/privacy/",
+  "termsOfServiceUrl": "https://ahaslides.com/terms/"
+}

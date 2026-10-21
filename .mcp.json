@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "ahaslides": {
+      "type": "http",
+      "url": "https://mcp.ahaslides.com/mcp"
+    }
+  }
+}
