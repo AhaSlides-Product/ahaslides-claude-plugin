@@ -21,7 +21,7 @@ description: Find, rename, duplicate, move, delete and recover AhaSlides present
 
 `delete_presentations` and `delete_folder` move items to the trash. Before calling either, list the exact titles and ids that will be affected, and wait for the user to say yes. Never delete in bulk from a vague request such as "clean up". Deleting a folder also trashes the presentations in it.
 
-`recover_presentations` restores items from the trash; offer it if the user says something was deleted by mistake.
+`recover_presentations` restores presentations (not folders) from the trash; offer it if the user says something was deleted by mistake.
 
 ## Rules
 
