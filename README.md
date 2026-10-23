@@ -2,7 +2,7 @@
 
 ![AhaSlides](logo.png)
 
-Connect Claude to [AhaSlides](https://ahaslides.com), the interactive presentation platform, so you can build and run audience-engagement sessions by describing what you want. Ask Claude to create a presentation from a topic, turn notes into a quiz, add polls and word clouds, or summarise how your audience responded.
+Connect Claude to [AhaSlides](https://ahaslides.com), the all-in-one engagement platform for teams and classrooms, so you can build and run audience-engagement sessions by describing what you want. Ask Claude to create a presentation from a topic, turn notes into a quiz, add polls and word clouds, or summarise how your audience responded.
 
 ## What it includes
 
